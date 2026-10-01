@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es" data-enfoque="todo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Giovanni Garrido · Portafolio</title>
+  <meta name="description" content="Ingeniero en Informática: desarrollo web, Python, soporte TI y ciberseguridad. Santiago, Chile.">
+  <meta property="og:title" content="Giovanni Garrido · Portafolio">
+  <meta property="og:description" content="Ingeniero en Informática: desarrollo web, Python, soporte TI y ciberseguridad.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%238b5cf6'/><text x='50' y='66' font-size='46' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>GG</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="fondo" aria-hidden="true"><span></span><span></span></div>
+
+  <header class="nav">
+    <a href="#inicio" class="logo">GG<span>.</span></a>
+    <nav id="menu">
+      <a href="#enfoque">¿Qué buscas?</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="nav-acciones">
+      <button class="icono-btn" id="btn-tema" aria-label="Cambiar tema claro/oscuro">🌙</button>
+      <button class="icono-btn menu-btn" id="btn-menu" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <div class="hero-texto">
+        <p class="pill"><span class="punto"></span> Disponible para trabajar · <span data-perfil="ubicacion"></span></p>
+        <h1>Hola, soy <span class="degradado">Giovanni Garrido</span></h1>
+        <p class="hero-rol"><span id="escribiendo"></span><span class="cursor">|</span></p>
+        <p class="hero-pitch" id="hero-pitch"></p>
+        <div class="botones">
+          <a href="#proyectos" class="btn btn-primario">Ver proyectos</a>
+          <a href="#" class="btn btn-secundario" data-cv download>⬇ Descargar CV</a>
+        </div>
+        <div class="redes">
+          <a data-link="github" target="_blank" rel="noopener">GitHub</a>
+          <a data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+          <a data-link="email">Email</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Resumen del perfil">
+        <div class="terminal-barra"><i></i><i></i><i></i><span>giovanni.js</span></div>
+        <pre id="terminal-codigo"></pre>
+      </div>
+    </section>
+
+    <!-- ENFOQUE PARA RECLUTADORES -->
+    <section id="enfoque" class="seccion">
+      <p class="sobretitulo">Para reclutadores</p>
+      <h2>¿Qué perfil estás buscando?</h2>
+      <p class="subtitulo">Elige uno y la página se adapta: destaca los proyectos, la experiencia y las habilidades que importan, y te entrega el CV adecuado.</p>
+
+      <div class="chips" id="chips" role="group" aria-label="Elegir perfil"></div>
+
+      <article class="resumen-enfoque">
+        <div>
+          <h3 id="enfoque-rol"></h3>
+          <ul id="enfoque-razones" class="lista-check"></ul>
+        </div>
+        <div class="resumen-lado">
+          <p class="mini-titulo">Herramientas clave</p>
+          <div id="enfoque-claves" class="tags"></div>
+          <div class="botones">
+            <a href="#" class="btn btn-primario" data-cv download>⬇ CV para este perfil</a>
+            <button class="btn btn-secundario" id="btn-compartir">🔗 Copiar enlace</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="seccion">
+      <p class="sobretitulo">Proyectos</p>
+      <h2>Cosas que he construido</h2>
+      <p class="subtitulo">Haz clic en un proyecto para ver el detalle.</p>
+      <div class="grid-proyectos" id="lista-proyectos"></div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="seccion">
+      <p class="sobretitulo">Trayectoria</p>
+      <h2>Experiencia y formación</h2>
+      <div class="linea-tiempo" id="lista-experiencia"></div>
+
+      <h3 class="titulo-certs">Certificaciones</h3>
+      <div class="grid-certs" id="lista-certs"></div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="seccion">
+      <p class="sobretitulo">Habilidades</p>
+      <h2>Con qué trabajo</h2>
+      <div class="grid-habilidades" id="lista-habilidades"></div>
+      <p class="idiomas">🗣️ <strong>Español</strong> nativo · <strong>Inglés</strong> intermedio (B1, curso TOEIC): leo documentación técnica sin problema.</p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="seccion contacto">
+      <h2>¿Conversamos?</h2>
+      <p class="subtitulo">Respondo rápido por correo o WhatsApp.</p>
+      <button class="email-grande" id="btn-email" title="Copiar correo">
+        <span data-perfil="email"></span>
+        <small id="email-estado">Clic para copiar</small>
+      </button>
+      <div class="botones centrados">
+        <a class="btn btn-primario" data-link="email">✉ Enviar correo</a>
+        <a class="btn btn-secundario" data-link="whatsapp" target="_blank" rel="noopener">💬 WhatsApp</a>
+        <a class="btn btn-secundario" data-link="linkedin" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-secundario" data-link="github" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="anio"></span> <span data-perfil="nombreCompleto"></span> · Hecho a mano con HTML, CSS y JavaScript</p>
+  </footer>
+
+  <dialog id="modal" aria-labelledby="modal-titulo">
+    <button class="cerrar" id="modal-cerrar" aria-label="Cerrar">✕</button>
+    <div id="modal-contenido"></div>
+  </dialog>
+
+  <div class="aviso" id="aviso" role="status"></div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
