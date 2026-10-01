@@ -1,36 +1,16 @@
-# Portafolio · Giovanni Garrido
+# portafolio
 
-Portafolio personal hecho con HTML, CSS y JavaScript puro (sin frameworks).
+Mi portafolio personal, se puede ver acá: https://giovannigarridor.github.io/portafolio/
 
-## Cómo funciona
+Lo hice con HTML, CSS y JavaScript, sin frameworks. La idea es que si eres reclutador elijas qué perfil buscas (desarrollo web, Python, soporte TI o ciberseguridad) y la página te muestre lo que te sirve de mí, junto con el CV que corresponde.
 
-| Archivo | Para qué sirve |
-|---|---|
-| `data.js` | **Todo el contenido**: proyectos, experiencia, habilidades, textos. Edita aquí. |
-| `main.js` | Lógica: arma la página con los datos y maneja el filtro por perfil. |
-| `styles.css` | Diseño. Los colores de cada perfil están al inicio (`[data-enfoque=...]`). |
-| `assets/cv/` | Un CV por perfil (desarrollo, soporte, ciberseguridad). |
+Si quieres entrar directo a uno:
 
-## Enlaces por perfil
+- Desarrollo web: https://giovannigarridor.github.io/portafolio/?enfoque=web
+- Python: https://giovannigarridor.github.io/portafolio/?enfoque=python
+- Soporte TI: https://giovannigarridor.github.io/portafolio/?enfoque=soporte
+- Ciberseguridad: https://giovannigarridor.github.io/portafolio/?enfoque=ciber
 
-Puedes mandarle a cada reclutador un enlace que ya abre la página con el perfil correcto:
+Todo el contenido (proyectos, experiencia, habilidades) está en `data.js`, así que cuando tengo algo nuevo solo cambio ese archivo.
 
-- `.../portafolio/?enfoque=web`
-- `.../portafolio/?enfoque=python`
-- `.../portafolio/?enfoque=soporte`
-- `.../portafolio/?enfoque=ciber`
-
-## Publicar gratis en GitHub Pages
-
-1. Crea un repositorio público llamado `portafolio` en GitHub.
-2. Sube estos archivos:
-   ```
-   git init
-   git add .
-   git commit -m "Primera versión del portafolio"
-   git branch -M main
-   git remote add origin https://github.com/GiovanniGarridoR/portafolio.git
-   git push -u origin main
-   ```
-3. En el repo: **Settings → Pages → Branch: main → Save**.
-4. En un par de minutos queda en `https://giovannigarridor.github.io/portafolio/`.
+Cualquier cosa me pueden escribir a giovanni.a.garrido14@gmail.com
